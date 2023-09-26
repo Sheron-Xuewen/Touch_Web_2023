@@ -1,0 +1,334 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Left Sidebar */
+#left-sidebar {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: calc(1920px / 21 * 4);
+    font-size: 18px;
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    overflow-y: auto;
+    max-height: 96vh;
+    z-index: 1000;
+}
+
+/* Remove underline from all links by default */
+#left-sidebar a {
+    text-decoration: none;
+}
+
+/* Add underline when hovered */
+#left-sidebar a:hover {
+    border: 1px solid rgb(255, 255, 255);;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+#left-sidebar p,
+#left-sidebar a,
+#left-sidebar span,
+#left-sidebar .preformatted {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    z-index: 1000;
+}
+
+.preformatted {
+    margin: 0;
+}
+
+#left-sidebar p {
+    margin-left: 40px;
+}
+
+#left-sidebar a.top-link {
+    margin-left: 40px;
+}
+
+#left-sidebar .section > .caret,
+#left-sidebar .section > a {
+    margin-left: 80px;
+}
+
+#left-sidebar .sub-section a {
+    margin-left: 40px;
+}
+
+.caret {
+    cursor: pointer;
+}
+
+.caret:hover {
+    border: 1px solid rgb(255, 255, 255);;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/* Initially open */
+.sub-section {
+    display: block;
+}
+
+#menu-icon {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+    background-color: black; 
+    padding: 5px;
+    width: 20px;
+     height: 20px;
+}
+
+
+.bar {
+    background-color: #ffffff;
+    height: 3px;
+    margin: 3px 0;
+    width: 20px;
+}
+
+#menu-icon:hover {
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+@media screen and (max-width: 768px) {
+    #left-sidebar {
+        display: none;
+        width: 366px;
+    }
+    #menu-icon {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #left-sidebar {
+        display: block;
+    }
+    #menu-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #left-sidebar {
+      display: block;
+    }
+    #menu-icon {
+      display: none;
+    }
+}
+
+#background-layer {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(1920px / 21 * 4);
+    z-index: 500;  /* Make sure it is below the sidebar but above other content */
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+    #background-layer {
+        display: block; 
+    }
+}
+
+/* 这是一个CSS注释，用于标识右边的主体部分的样式开始 */
+
+/* Main Content */
+#main-content {
+    margin-left: calc(1920px / 21 * 4);
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    padding: 20px 40px 40px 40px;  /* 上 右 下 左 */
+}
+
+#main-title {
+    font-size: 60px;
+    margin: 48px;
+}
+
+.sub-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.text-content {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.second-sub-title {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+
+.two-column {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0; /* Collapse the div */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #main-content {
+        margin-left: 0;
+        padding: 15px 30px 30px 30px;  /* 上 右 下 左 */
+    }
+
+    #main-title {
+        font-size: 40px;
+        margin: 16px;
+    }
+
+    .two-column {
+        column-count: 1;
+    }
+
+    .video-container {
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    }
+}
+
+.yellow-box {
+    background-color: rgb(255, 244, 176);  /* 设置背景色为黄色 */
+    border: 2px solid black;  /* 设置边框为黑色，宽度为2px */
+    padding: 10px;  /* 设置内边距为10px */
+    margin: 10px 0;  /* 设置外边距为上下10px，左右0 */
+}
+
+.gray-box {
+    background-color: rgb(219, 219, 219);  /* 设置背景色为黄色 */
+    border: 2px solid black;  /* 设置边框为黑色，宽度为2px */
+    padding: 10px;  /* 设置内边距为10px */
+    margin: 10px 0;  /* 设置外边距为上下10px，左右0 */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-container img {
+    width: calc(100% / 4 - 10px);  /* 4 images per row, minus some margin */
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container img {
+        width: calc(100% / 2 - 10px);  /* 2 images per row on smaller screens, minus some margin */
+    }
+}
+
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 68, 255, 0.695);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(100% / 6);
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: calc(100% / 3);
+    }
+}
+
+.responsive-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.responsive-image{
+max-width: 100%;
+height: auto;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.two-column-responsive {
+  column-count: 2;
+  column-gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .two-column-responsive {
+    column-count: 1;
+  }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+  }
+  
+  th {
+    background-color: #e0e0e0;
+  }
+
+.responsive-table {
+    overflow-x: auto;
+}
+
+/* Basic Styling */
+.gif-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  
+  .gif-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .gif-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

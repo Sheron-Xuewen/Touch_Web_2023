@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Touch-Interface World</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body id="top">
+
+  <div id="menu-icon">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  
+  <div id="background-layer"></div>
+  <div id="left-sidebar">
+    <p class="indent-4">Contents</p>
+    <p class="indent-4"><a href="#top">Top</a></p>
+    
+    <p class="indent-0"><a href="#chapter1">Chapter 1 Project Overview</a></p>
+    
+    <p><span class="caret">&#9660;</span><span class="inline indent-0"><a href="#chapter2">Chapter 2 Project Preparation and Objectives</a></span></p>
+    <div class="sub-section">
+        <p class="indent-4"><a href="#2-1">2.1 Background Introduction</a></p>
+        <p class="indent-4"><a href="#2-2">2.2 Academic Research</a></p>
+        <p class="indent-4"><a href="#2-3">2.3 Target Setting📍</a></p>
+    </div>
+    
+    <p><span class="caret">&#9660;</span><span class="inline indent-0"><a href="#chapter3"> Chapter 3 User Research</a></span></p>
+    <div class="sub-section">
+        <p class="indent-4"><a href="#3-1">3.1 Interview Questions</a></p>
+        <p class="indent-4"><a href="#3-2">3.2 Data Statistics</a></p>
+        <p class="indent-4"><a href="#3-3">3.3 Persona Development</a></p>
+    </div>
+    
+    <p><span class="caret">&#9660;</span><span class="inline indent-0"><a href="#chapter4"> Chapter 4 Idea</a></span></p>
+    <div class="sub-section">
+        <p class="indent-4"><a href="#4-1">4.1 Idea draft</a></p>
+        <p class="indent-4"><a href="#4-2">4.2 Framework draft</a></p>
+    </div>
+    
+    <p><span class="caret">&#9660;</span><span class="inline indent-0"><a href="#chapter5"> Chapter 5 Concept Development</a></span></p>
+    <div class="sub-section">
+        <p class="indent-4"><a href="#5-1">5.1 Introduction</a></p>
+        <p class="indent-4"><a href="#5-2">5.2 System Architecture</a></p>
+        <p class="indent-4"><a href="#5-3">5.3 Interaction Framework</a></p>
+        <p class="indent-4"><a href="#5-4">5.4 System advantages 👍</a></p>
+        <p class="indent-4"><a href="#5-5">5.5 Iterative Record of Conceptual Development</a></p>
+    </div>
+    
+    <p><span class="caret">&#9660;</span><span class="inline indent-0"><a href="#chapter6"> Chapter 6 Prototype development</a></span></p>
+    <div class="sub-section">
+        <p class="indent-4"><a href="#6-1">6.1 Data collection</a></p>
+        <p class="indent-4"><a href="#6-2">6.2 Feature extraction and methods</a></p>
+        <p class="indent-4"><a href="#6-3">6.3 Model and feature selection</a></p>
+        <p class="indent-4"><a href="#6-4">6.4 Model Innovation: 'Multi-Tree'🌳</a></p>      
+        <p class="indent-4"><a href="#6-5">6.5 Final prototype development record</a></p>
+    </div>
+    
+    <p><span class="caret">&#9660;</span><span class="inline indent-0"><a href="#chapter7"> Chapter 7 Product design based on prototypes and concepts</a></span></p>
+    <div class="sub-section">
+        <p class="indent-4"><a href="#7-1">7.1 Introduction</a></p>
+        <p class="indent-4"><a href="#7-2">7.2 Component list</a></p>
+        <p class="indent-4"><a href="#7-3">7.3 Sketch🎨</a></p>
+        <p class="indent-4"><a href="#7-4">7.4 Product model and usage</a></p>   
+    </div>
+    
+    <p class="indent-0"><a href="#chapter8">Chapter 8 Use Case Storyboard</a></p>
+  
+    <p class="indent-0"><a href="#chapter9">Chapter 9 Thank you for viewing!💐</a></p>   
+
+    <!-- 这是一个HTML注释，用于标识右边的主体部分开始 -->
+</div>
+
+<div id="main-content">
+    <h1 id="main-title">Touch-Interface World: Bridging the Physical and Digital Through Touch-Based Interactions</h1>
+    <p class="sub-title">by Xuewen Zhao</p>
+    <p class="sub-title">A 30-Second Preview ▼</p>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IdG1FN0A1ow?si=BKQz7XMjWN5ACxbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <p class="sub-title">Object recognition prototype demonstration▼</p>
+    <p class="text-content">Full length 6'30'', and the main time is data entry, I recommend you play it at multiple speeds. Thank you for watching! </p>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fU2kepT_XYM?si=vakfRJh5db8rAO4J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <p class="sub-title">GitHub repository ▼</p>
+    <a href="https://github.com/Sheron-Xuewen/TouchWorld_2023">github.com/Sheron-Xuewen/TouchWorld_2023</a>
+
+</div>    
+<hr>
+<div id="main-content">
+    <h2 class="sub-title">🔵 Self-Learning and Philosophy in HCI</h2>
+    <div class="text-content two-column">📚 This project was implemented by me learning and exploring in the area of HCI. I struggled in the ocean of computer science, but enjoyed the beautiful scene of technology application.<br><br>
+        🧠 I philosophized a lot about the essence of Human-Computer Interaction. From chaos to the awaking of intelligence of human, from ancient times to nowadays, people never stop getting to know about objective things. And how? By interacting with them. Interaction is always the main way that we cognize the world until the age of computer has arrived. Today, people controlled objects via controlling the computers, and are gradually moving away from the traditional approaches to know things. It signaled the beginning of the era of the separation of interaction and objects.<br><br>
+        🌍 Tangible User Interface is a far-reaching topic. Nowadays, the Human-Computer Interaction under the new theory is gradually entering people's everyday life, which promotes seamlessly integrating computers into the environment by tangible user interface. Is it the sign of the remerging of interaction and objects that would initiate another way that people get to know objects by re-focussing on the physical objects themselves? I wrote an article about this, please see the related section of my portfolio for details.<br><br>
+        💡 Under such contemplation, I completed the conceptualization of this project. The core is let users put their focus moving off screen on the environment and physical objects themselves. Let the interaction process no longer be separated from the objects and let the diverse objective world become the endless source of human creation and development once again.</p>
+    </div>
+    <h2 class="sub-title">🟠 AI-Assisted Programming Usage Statement</h2>
+    <p class="text-content">
+        🧩 After I finished the layout of the fundamental framework, I divided the program into small modules, then used AI-assisted programming to quick generate code for each module, after which put them collectively, just like putting together a puzzle. Because of this, I no longer needed to consult a professional or consult forums when there was a programming trouble. It not only saved me a lot of time and energy, but also allowed me to focus on the core task of my project.<br><br>
+        ❗❗ If there's any doubt, I'll be happy to clarify.
+    </p>
+</div>
+<hr>
+
+<div id="main-content">   
+    <!-- 这是一个HTML注释，用于标识项目概况 -->
+    <div id="chapter1">
+    <h2 class="sub-title">1 Project Overview</h2>
+    <div class="text-content two-column">    
+        This project introduces an interactive model called"Touch-Based Interaction," which aims  at bridging the physical world with digital interfaces through touch-based interactions changing the world into a huge tangible user interface.<br><br> 
+The key innovation lies in I developed a 'Multi-Tree' Random Forest model that is optimized for incremental learning. which can currently accurately identify at least three everyday items and two gestures. New objects can also be seamlessly added to the model, with fewer calculations.<br><br>
+Based on this model, I also designed a smart ring with a micro-accelerometer, worn on the pad of the user's finger to capture data associated with finger-object touch.<br><br>
+The interaction system has broad application prospects, such as integrated with smartphones or other digital devices for device control, information retrieval, and social interaction. Despite it's still in its early stages, it has already shown its potential.<br><br> 
+    </div>
+</div>
+</div>
+
+<hr>
+<div id="main-content">   
+    <!-- 这是一个HTML注释，用于标识前期 -->
+    <div id="chapter2">
+        <h2 class="sub-title">2 Project Preparation and Objectives</h2>
+        <div id="2-1">
+            <h2 class="second-sub-title">2.1 Background Introduction</h2>
+            <div class="text-content two-column">
+                In today’s digital age, screens divide the world into physical and digital side, between which there's a gap that limits our seamless interaction experience and imagination.Augmented Reality (AR) and Internet of Things (IoT) did a notable work in bridging the divide. But there's still some challenges, such as relying on visual markers, need a large amount of pre-entered training data and trained models etc.
+                The actual world is full of complexities and randomness, every object or surface has its own feel and texture. Despite this, digital systems usually take a generic route. They overlook the unique touch and feel of each object. This makes user interactions kind of shallow. It weakens the connection between user experiences and the actual physical world.<br><br>
+                What if we had tech that could really understand each object's individuality? Living in the digital age doesn't mean we should forget the richness of the physical world. If we can gain a deeper understanding of the diversity of the actual world, there are no limits to the merging of the digital and physical worlds.
+            </div>
+        </div>   
+        <div id="2-2">
+            <h2 class="second-sub-title">2.2 Academic Research</h2>
+            <p>🔹Paper Research<br><br>
+                Paper 1<br>
+                Title: Teachable Reality: Prototyping Tangible Augmented Reality with Everyday Objects by Leveraging Interactive Machine Teaching<br>
+                Author: Kyzyl Monteiro，Ritik Vatsal， Neil Chulpongsatorn，Aman Parnami，Ryo Suzuki<br><br>
+                Paper 2<br>
+                Title: Accurate and Low-Latency Sensing of Touch Contact on Any Surface with Finger-Worn IMU Sensor<br> 
+                Author: Yizheng Gu，Chun Yu，Zhipeng Li，Weiqi Li，Shuchang Xu，Xiaoying Wei，Yuanchun Shi<br><br>
+                Paper 3<br>
+                Title: Fine-grained Vibration Based Sensing Using a Smartphone<br>
+                Author: Kamran Ali and Alex X. Liu<br><br>
+                Paper 4<br>
+                Title: ViBand: High-Fidelity Bio-Acoustic Sensing Using Commodity Smartwatch Accelerometers<br>
+                Author: Gierad Laput，Robert Xiao，Chris Harrison<br><br>
+                📚 Note: I read paper 1 in depth to learn methods and theories of HCI design systematically, and paper 2-4 to ensure the originality of my design, and there's no overlap with other people’s work.                                
+            </p>
+            <p>🔹Daily Study</p>
+            <p>I have diverse avenues to acquire knowledge, including search engines, educational video platforms, social media, and online courses. Learning about HCI, computer science and product design are my daily activities. Besides that, I‘m learning by practicing via this project.
+            </div>
+            </p>
+        </div>
+        <div id="2-3">
+            <h2 class="second-sub-title">2.3 Target Setting📍</h2>
+            <div class="text-content two-column">
+            ①🌉 Enhance Physical-Digital Connectivity<br><br>
+            ②🌋 Transcend Traditional Limitations<br><br>
+            ③✋ Object-as-Interface Approach<br><br>
+            ④👥 Personalized User Experience<br><br>
+            ⑤🌎 Adaptive Real-world Engagement
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div id="main-content">   
+    <!-- 这是一个HTML注释，用于标识用户 -->
+    <div id="chapter3">
+        <h2 class="sub-title">3 User Research</h2>
+        <div id="3-1">
+            <h2 class="second-sub-title">3.1 Interview Questions</h2>
+            <div class="yellow-box">
+            <p class="text-content">
+            1. How frequently do you interact with digital interfaces❓<br>
+            2. What types of devices do you most commonly use❓<br>
+            3. What are your thoughts on current digital interactions❓<br>
+            4. What aspects of current digital interactions do you dislike❓<br>
+            5. Have you ever used non-traditional forms of digital interaction (e.g., voice control, gesture control, etc.)❓ If so, what has your experience been like❓<br>
+            6. Would you be interested in solutions that allow you to use everyday objects as digital interfaces❓<br>
+            7. What would you like such solutions to look like or accomplish❓<br>
+            </p>           
+            </div>
+        </div>
+        <div id="3-2">
+            <h2 class="second-sub-title">3.2 Data Statistics</h2>
+            <p class="text-content">
+            3.2.1 User Information Statistics
+            </p>           
+            <div class="gray-box">
+            <p class="text-content">
+            Iteration Records<br><br>
+            At the beginning of this research, I centered on considering AR as the primary mode of interaction. However, following the successful improvement of my prototype on object recognition, I reset the target of the mission to Tangible User Interface. Therefore, I redo it, starting with User Interviews.
+            </p>          
+            </div>
+            <p class="text-content">
+            Data was collected through one-on-one interviews, with a sample size of 6 participants.▼
+            </p>  
+            <div class="image-container">
+                <img src="pic/Age Group.png" alt="Image 1">
+                <img src="pic/Experience with Non-Traditional Digital Interaction Methods.png" alt="Image 2">
+                <img src="pic/Occupation Relevance.png" alt="Image 3">
+                <img src="pic/Technical Proficiency.png" alt="Image 4">
+            </div>
+            <p class="text-content">
+            3.2.3 Visualization of Interview Data <br>
+            </p> 
+            <div class="image-container">                             
+                <img src="pic/Frequency of interaction with digital interfaces.png" alt="Image 8">
+                <img src="pic/Interest in Using Everyday Objects as Digital Interfaces.png" alt="Image 9">
+                <img src="pic/User Satisfaction with Current Digital Interactions.png" alt="Image 10">
+                <img src="pic/Attitudes Towards Non-Traditional Interfaces.png" alt="Image 5">
+                <img src="pic/Distribution of Device Usage Among Participants.png" alt="Image 7">
+                <img src="pic/Desired Qualities in an Ideal User Interface.png" alt="Image 6">
+            </div>
+            <p class="text-content">
+            3.2.3 User Understanding and Insight Generation
+            </p> 
+            <div class="column-container">
+                <div class="column">Ⅰ Frequent Interaction<br><br>
+                    👁️‍🗨️ Users interacted with virtual interfaces everyday.<br><br>
+                    ⚙️ Make the interaction system intuitive and smooth to integrate.
+                </div>
+                <div class="column">Ⅱ Mobile Device Preference<br><br>
+                    👁️‍🗨️ Users generally use smartphones.<br><br>
+                    ⚙️ Ensure optimized user experience on mobile devices.     
+                </div>
+                <div class="column">Ⅲ Positive Attitude Towards Non-Traditional Interfaces<br><br>
+                    👁️‍🗨️ Users have a positive attitude and curiosity toward unconventional digital interfaces.<br><br>
+                    ⚙️ Include the solution of novel interaction techniques.
+                </div>
+                <div class="column">Ⅳ Interest in Object-Based Interfaces<br><br>
+                    👁️‍🗨️ The idea of employing everyday objects as digital interfaces is appealing to users.<br><br>
+                    ⚙️ Make it possible for everyday objects to act as digital interfaces.
+                </div>
+                <div class="column">Ⅴ Desire for Personalization<br><br>
+                    👁️‍🗨️ Users want their digital interactions to be more personalized.<br><br>
+                    ⚙️ Make the user interface totally personalized.  
+                </div>
+                <div class="column">Ⅵ Concerns About Accessibility<br><br>
+                    👁️‍🗨️ Users have concerns about the accessibility of new technology.<br><br>
+                    ⚙️ Prioritize accessibility and usability in the design of the interaction model.      
+                </div>
+            </div>
+        </div>
+        <div id="3-3">
+            <h2 class="second-sub-title">3.3 Persona Development</h2>
+            <div class="responsive-image-container">
+                <img src="pic/Persona.jpg" alt="Description of image" class="responsive-image">
+            </div>    
+            <div class="responsive-image-container">
+                <img src="pic/Map.jpg" alt="Description of image" class="responsive-image">
+            </div>         
+        </div>       
+    </div>
+</div>
+<hr>
+<div id="main-content">   
+    <!-- 这是一个HTML注释，用于标识构思 -->
+    <div id="chapter4">
+        <h2 class="sub-title">4 Idea</h2>
+        <div id="4-1">
+            <h2 class="second-sub-title">4.1 Idea draft</h2>
+            <div class="responsive-image-container">
+                <img src="pic/idea draft.jpg" alt="Description of image" class="responsive-image">
+            </div> 
+        </div> 
+        <div id="4-2">
+            <h2 class="second-sub-title">4.2 Framework draft</h2>
+            <div class="responsive-image-container">
+                <img src="pic/framework idea.png" alt="Description of image" class="responsive-image">
+            </div> 
+        </div>      
+    </div>
+</div>
+
+<hr>
+<div id="main-content">   
+    <!-- 这是一个HTML注释，用于概念开发 -->
+    <div id="chapter5">
+        <h2 class="sub-title">5 Concept Development</h2>
+        <div id="5-1">
+            <h2 class="second-sub-title">5.1 Introduction</h2>
+            <div class="text-content two-column">
+                🌍 The Era of Universal Touch Control for Tangible User Interfaces<br><br>
+                💡 Concept: The system could convert the distinctive tactile properties of objects into rich digital interactive experiences by using sensors and machine learning algorithms.<br><br>
+                🚀 Innovation: Compared with AR, this project deepens interactions through recognizing the "touch texture" of things.<br><br>
+                🔮 Future Vision: Although the current technology is limited, this innovative concept indicates a expansive future, and each touch and interaction may have a significant impact on the digital world.<br><br>
+                🌱 Potential: The project offers a platform for developers to make new experiences in a range of industries, from gaming to education.<br><br>                            
+            </div>     
+        </div>
+        <div id="5-2">
+            <h2 class="second-sub-title">5.2 System Architecture</h2>
+        <div class="responsive-image-container">
+            <img src="pic/System Architecture.png" alt="Description of image" class="responsive-image">
+        </div>
+        </div>
+        <div id="5-3">
+            <h2 class="second-sub-title">5.3 Interaction Framework</h2>
+        <div class="responsive-image-container">
+            <img src="pic/Interaction Framework.png" alt="Description of image" class="responsive-image">
+        </div>
+        </div>
+        <div id="5-4">
+            <h2 class="second-sub-title">5.4 System advantages 👍</h2>
+            <p class="text-content">
+                🌉 Physical-Digital Bridging: Bringing the physical and digital worlds closer together.<br><br>
+                ☝️ Haptic Recognition: Strong adaptability.<br><br>                              
+                🔄 Rich Object Interaction: Transforming everyday objects into multi-functional interaction devices.<br><br>
+                🛠️ Adaptability & Customization: Adapt to various users and environments flexibly.<br><br>
+                📉 Natural integration: Use intuitive interactions to reduce the learning curve.<br><br>
+                🔒 Privacy-Centric: Consider data security and privacy while designing.<br><br>
+        </div>
+        <div id="5-5">
+            <h2 class="second-sub-title">5.5 Iterative Record of Conceptual Development</h2>
+            <div class="gray-box">
+                <p class="small-text">
+                    Initial Concept: TUI Based on Acoustic-Tactile Signatures<br>
+· Preliminary Vision - Tap<br>
+· Challenges and Limitations - Data Stability<br><br>
+Prototype Development: TUI Based on Pressure-Induced Acoustic-Tactile Signatures<br>
+· Adaptive Modifications - Technical and resource limitations<br>
+· Actual Interaction Mode - Pressing objects<br><br>
+Future Version: TUI Based on Touch-Induced Tactile Signatures<br>
+· Theoretical Optimization and Foresight - advancements in sensor technology and machine learning algorithms<br>
+· Anticipated Interaction Mode - Lightly touching<br><br>
+Reflection and Future Directions<br>
+· Iterative Logic - Tap → Press → Touch<br> 
+· Future Plans - Improving sensor sensitivity and optimizing machine-learning models<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<div id="main-content">   
+    <!-- 这是一个HTML注释，用于概念开发 -->
+    <div id="chapter6">
+        <h2 class="sub-title">6 Prototype development</h2>
+        <p class="text-content">
+            Goal: To develop a model for real-time object recognition.<br>
+            &emsp; &emsp; Be able to accurately distinguish different objects and have the ability to incrementally learn<br>
+            &emsp; &emsp; The recognition of new objects can be added at any time.<br>
+        </div>
+        <div id="6-1">
+            <h2 class="second-sub-title">6.1 Data collection</h2>
+            <p class="text-content">6.1.1 Specifications of accelerometer</p>
+            <div class="responsive-image-container">
+                <img src="pic/ADXL345.png" alt="Description of image" class="responsive-image">
+            </div>
+            <p class="text-content">
+                ADXL345 three-axis accelerometer<br>
+· Type: Digital three-axis accelerometer<br>
+· Measuring range: ±16g<br>
+· Resolution: 13 bits<br>
+· Data output format: 16-bit two’s complement<br>
+· Interface type: SPI (3 or 4 wires) and I2C<br>
+· Power consumption: ultra-low<br>
+· Special features:<br>
+&emsp;· Static gravity and dynamic acceleration measurement<br>
+&emsp;· Activity and inactivity detection<br>
+&emsp;· Knock and free fall detection<br>
+&emsp;· Integrated 32-level FIFO buffer to reduce system power consumption<br><br>
+6.1.2 Installation and calibration of accelerometer<br>Wiring diagram
+            </p>
+            <div class="responsive-image-container">
+                <img src="pic/Wiring diagram.png" alt="Description of image" class="responsive-image">
+            </div>
+            <p class="text-content">
+                6.1.3 Microphone procedures and abandonment<br>
+                Note: GY-4466 model sound module<br>
+&emsp; &emsp; Hope to assist object recognition. <br>
+&emsp; &emsp; Abandoned: Uncontrollable environmental noise and high sound module delay.<br>
+            </p>
+            <div class="responsive-image-container">
+                <img src="pic/Microphone.jpg" alt="Description of image" class="responsive-image">
+            </div>
+            <p class="text-content">6.1.4 Data acquisition experimental design<br>
+                1. Program: Directly transfer accelerometer data to pycharm from Arduino and visualize it.<br><br>
+                2. Determine: How the accelerometer and the finger are fixed?<br>
+                Whether the finger contact objects, by tapping or touching it?<br>
+                Whether it is pressed lightly or hard?<br>              
+            </p>
+            <div class="responsive-image-container">
+                <img src="pic/Polyline.png" alt="Description of image" class="responsive-image">
+            </div>
+            <p class="text-content">Tapping vs. Pressing<br>
+                Tap (Figure 1-7) - Unstable<br>
+                Pressing (Figure 8,9) - Stable<br><br>
+                Reasons for choosing to press hard, based on cpmparing pressing light (Figure 8) and pressing hard (Figure 9):<br><br>
+                · Signal-to-noise ratio (SNR)<br>
+                Figure 8: signal-to-noise ratio is 11.32<br>
+                Figure 9: signal-to-noise ratio of 11.77<br>
+                · Pressing hard has a higher SNR.<br><br>
+                · Distinguishability of features: Since pressing hard may produce a more pronounced physical response, the features extracted from this data may be more useful in distinguishing different objects.<br><br>
+                · Consistency between the same objects:<br>
+                Pressing hard operations are easier to control.<br><br>
+                In summary, choosing hard pressing as a data set for object recognition.<br>
+            </p>
+            <div class="gray-box">
+                <p class="text-content">
+                    Data collection iteration records combined with product design<br><br>
+Initial design phase<br>
+· Number of objects: 4.<br>
+· Data volume: 5 presses per object.<br>
+· Pressing duration: Each Pressing lasts 20 seconds.<br><br>
+Iteration 1: Optimizing the pressing duration<br>
+1 Reflection and Problem Identification:<br>
+The initial design required the user to press each new object five times, each lasting 20 seconds, which was  time-consuming.<br>
+2 Iteration method:<br>
+The model training phase will consider using different pressing durations to train the model and test the accuracy.<br>
+3 Expected results:<br>
+The aim is to find a more user-friendly data collection solution without compromising accuracy.<br><br>
+Iteration 2: Expand the number of objects and optimize the amount of data<br>
+1 Reflection and Problem Identification:<br>
+More types of objects need to be added.<br>
+2 iteration method:<br>
+In order to adapt to the 'Multi-Tree' model training method, consider increasing the number of objects.<br>
+3 Expected results:<br>
+Through this iteration, it is expected that the accuracy and generalization capabilities of the model will improve.<br><br>
+Final iteration results<br>
+· The number of objects: 4 to 7.<br>
+· The pressing time: 20 seconds to 10 seconds.<br>
+· Each object is still pressed 5 times, 3 times for the training set and 2 times for the test set, what means the user can enter data by pressing 3 times.<br><br>
+                </p>                    
+        </div>
+        <div id="6-2">
+        <h2 class="second-sub-title">6.2 Feature extraction and methods</h2>
+        <p class="text-content">6.2.1 Features to be extracted:<br>
+        </p>
+        <p class="small-text">
+            1. Time domain features<br>
+            1.2.Maximum and minimum values: NumPy's np.max() and np.min() functions. <br>
+            3.4.Median and quartiles (Q1, Q3): NumPy's np.median() and np.percentile() functions. <br>
+            5.Root mean square (RMS): Calculated by np.sqrt(np.mean(np.square(data))). <br>
+            6.Zero crossing rate: Calculated by len(np.where(np.diff(np.sign(data)))[0]). <br><br>
+            2. Frequency domain characteristics:<br>
+            1.Fundamental frequency: Fast Fourier Transform (FFT) to find the most intense frequency component. <br>
+            2.3.Spectrum centroid and spectrum standard deviation: Calculate the mean and standard deviation of the spectrum through Fourier transform. <br><br>
+            3. Statistical characteristics:<br>
+            1.2.Mean and standard deviation: NumPy's np.mean() and np.std() functions. <br>
+            3.4.Skewness and kurtosis: SciPy's scipy.stats.skew() and scipy.stats.kurtosis() functions. <br><br>
+        </p>
+        <p class="text-content">    
+            6.2.2 Steps<br>
+            1. Feature extraction. <br>
+            2. Save the features and labels to a new line in the CSV file. <br>
+            3. Repeat steps 1 and 2 until I have enough data. <br>
+            4. Use data from CSV files for model training and testing. <br>
+        </p>
+        </div>
+        <div id="6-3">
+        <h2 class="second-sub-title">6.3 Model and feature selection</h2>
+        <p class="text-content">6.3.1 Model comparison and feature selection<br>
+            Accuracy comparison: based on five sets of 20-second data and the full feature set:
+        </p>
+        <div class="responsive-table">
+            <table border="1">
+                <!-- Table Header -->
+                <thead>
+                  <tr>
+                    <th>Model</th>
+                    <th>Test Accuracy</th>
+                    <th>Model</th>
+                    <th>Test Accuracy</th>
+                  </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                  <tr>
+                    <td>Random Forest</td>
+                    <td>100%</td>
+                    <td>Decision Tree</td>
+                    <td>33.3%</td>
+                  </tr>
+                  <tr>
+                    <td>Logistic Regression</td>
+                    <td>22.2%</td>
+                    <td>Naive Bayes</td>
+                    <td>33.3%</td>
+                  </tr>
+                  <tr>
+                    <td>K-NN</td>
+                    <td>22.2%</td>
+                    <td>Neural Network</td>
+                    <td>44.4%</td>
+                  </tr>
+                  <tr>
+                    <td>SVM</td>
+                    <td>33.3%</td>
+                    <td>Gradient Boosting</td>
+                    <td>22.2%</td>
+                  </tr>
+                </tbody>
+              </table>              
+        </div>
+        <p class="text-content">Conclusion: The Random Forest model showed the best performance.<br><br>
+            Comparison of accuracy of Random Forest model after applying different feature selection methods:
+        </p>
+        <div class="responsive-table">
+            <table border="1">
+                <!-- Table Header -->
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>All Features Extracted by Feature Extraction Program</th>
+                    <th>Training with Built-In Feature Importance</th>
+                    <th>Using ANOVA F-value to Select 10 Key Features</th>
+                  </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                  <tr>
+                    <td>20-second Press</td>
+                    <td>100%</td>
+                    <td>66.7%</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <td>5-second Press</td>
+                    <td>66.7%</td>
+                    <td>44.4%</td>
+                    <td>77.78%</td>
+                  </tr>
+                </tbody>
+              </table>              
+        </div>
+        <p class="text-content"> 
+            *The features selected by ANOVA F-value are: Xmax, Ymax, Ymin, Ymedian, Yq1, Yq3, Yrms, Ymean, Ystd, Yskew<br>
+            Conclusion: Using ANOVA F-value to select 10 key features and then training the random forest model shows the best performance.<br><br>
+6.3.2 Pressing duration selection<br>
+The accuracy of the Random Forest model under each pressing duration (5 sets of data per duration, training set 3, test set 2) using ANOVA F-value feature selection:
+        </p>
+        <div class="responsive-table">
+            <table border="1">
+                <!-- Table Header -->
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>5s - Testing</th>
+                    <th>10s - Testing</th>
+                    <th>20s - Testing</th>
+                  </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                  <tr>
+                    <td>5s - Training</td>
+                    <td>77.78%</td>
+                    <td>66.67%</td>
+                    <td>83.33%</td>
+                  </tr>
+                  <tr>
+                    <td>10s - Training</td>
+                    <td>83.33%</td>
+                    <td>88.89%</td>
+                    <td>83.33%</td>
+                  </tr>
+                  <tr>
+                    <td>20s - Training</td>
+                    <td>85.71%</td>
+                    <td>88.89%</td>
+                    <td>100%</td>
+                  </tr>
+                </tbody>
+            </table>              
+        </div>
+        <p class="text-content"> 
+            Based on table data analysis, in order to balance user experience and model accuracy, I selected a pressing duration of 10 seconds, 3 presses are used to build the training set and 2 are used for the test set, that means the user only needs to press times to complete data entry.
+        </p>
+        </div>
+        <div id="6-4">
+            <h2 class="second-sub-title">6.4 Model Innovation: 'Multi-Tree'🌳</h2>
+            <p class="text-content">Random Forests feature-based tree assignment, adapting to Incremental Learning.<br><br>
+                6.4.1 Background and Problem Definition<br><br>
+Product design needs:<br>
+Users will continuously upload data of new objects.<br><br>
+Problems encountered:<br>
+Random Forest does not perform very well when faced with incremental learning. Every time new object data is added, the entire random forest model needs to be retrained, which is very expensive in terms of calculation and time.<br><br>
+6.4.2 Solution: Feature-based tree assignment<br><br>
+1. Data partitioning principle: <br>
+Different from traditional random forests, I divide the entire forest into multiple independent trees, and each tree is only responsible for processing objects with a specific range of characteristics. In this way, when new object data is added, only the tree responsible for that specific feature range needs to be updated.<br><br>
+2. Incremental learning and model update: <br>
+This method greatly reduces the computational burden, because when new object data is added, only a part of the model needs to be updated, rather than the entire forest.<br><br>
+3. Control complexity: <br>
+Through this method, the complexity of each tree is effectively controlled, thereby improving the maintainability of the entire model.       
+            </p>
+            <div class="gray-box">
+                <p class="small-text">
+                    Development log:<br><br>
+Concept Origin<br>
+This idea is inspired by daily life.<br><br>
+Challenge and Exploration<br>
+After it became clear that the Random Forest model was not suitable for incremental learning, I tried multiple models and found that other models performed far less well than random forest. <br>
+I searched from Wiki, Google Scholar etc, and found that the existing methods are too complex to my application that the amount of data is small and the model is relatively simple. This even made me wanna give up this proto.<br><br>
+Inspiration and Solutions<br>
+The final inspiration came from something I use every day: Accounting Software. These software usually have a "categorization" function, and users only need to record each expense under the corresponding category. This way, every time a user adds new data, just like in accounting software, only a specific component of the model, a specific tree, needs to be updated. This innovative approach allowed me to maintain Random Forest as the core algorithm without increasing the amount of data or abandoning incremental learning, thus successfully preserving my original product design.
+                </p>
+            </div>
+            <p class="text-content">
+                6.4.3 Selection of tree features<br>
+                Currently, I have settled on a single feature as the basis for dividing the random forest model into separate trees. As the size and complexity of data increasing, the use of multiple features for tree assignment may also be considered in the future.<br><br>
+                Object and number<br>
+                1-Wooden table<br>
+                2-Foam Board<br>
+                3-Towel<br>
+                4-Pinch<br>
+                5-Palm<br>
+                6-Plastic bottles<br>
+                7-Silicone rubber toys<br>
+            </p>
+            <div class="responsive-image-container">
+                <img src="pic/photo.jpg" alt="Description of image" class="responsive-image">
+            </div>
+            <p class="text-content">
+            Boxplot of all features of objects 1-6
+            </p>         
+            <div class="responsive-image-container">
+                <img src="pic/boxplot.png" alt="Description of image" class="responsive-image">
+            </div>
+            <p class="text-content">
+Box plot analysis:<br><br>
+Good: `X_min`, `Y_min`, `Z_min`, `X_std`, `Y_std`, and `Z_std`. <br>
+Not Good: all `_zero_cross_rate` features, and most `_q1` and `_q3` features. <br><br>
+Observations and conclusions: <br>
+Select Y_std=2 as the tree splitting threshold<br><br>
+1, 2, 3, 6, and 7 - Y_std values are all significantly less than 0.2<br>
+4 and 5 - Y_std values are significantly more than 0.2.<br><br>
+Physical meaning:<br>
+1. Variability: Higher `Y_std` value  - more "active" or "erratic"<br>
+2. Complexity: Higher `Y_std`  - more complex<br>
+3. Force distribution: Higher `Y_std`  - force changes faster <br><br>
+Application significance:<br>
+1. Differentiating the objects:<br> 
+12367: objects<br>
+45: gestures<br>
+2. User interaction: Help to understand how users interact with these objects.<br><br>
+Reflection and expansion: <br>Since the objects are obviously different, what should I do if there is a threshold and fluctuate near the threshold? Therefore, more complex classification models may need to be considered in the future. 
+            </p>
+        </div>
+        <div id="6-5">
+            <h2 class="second-sub-title">6.5 Final prototype development record</h2>
+        </div>
+        <p class="text-content">
+            📌For the full version of the demo video, please click 'Top' on the left navigation bar.
+        </p> 
+        <div class="yellow-box">
+        <p class="small-text">
+            1 Data extraction and processing:<br>
+Prepare raw data of 6 objects.<br>
+Perform data preprocessing and feature extraction.<br>
+Split the data into training and test sets.<br><br>
+2 Model training of two trees:<br>
+Using a program, first divide the data of these 6 objects into two groups based on a selected feature and  threshold.<br>
+Each set of data is used to train a Random Forest tree.<br>
+Save the two trained models to the hard drive.<br>
+Feature selection after initial training:<br>
+Selected features: ['Y_max', 'Y_median', 'Y_q1', 'Y_q3', 'Y_mean', 'Y_skew', 'Z_max', 'Z_min', 'Z_q3', 'Z_std']<br>
+Training accuracy of the model: 1.00<br><br>
+3 Model update:<br>
+Provide training data for new objects.<br>
+The program will determine which tree this new object should belong to based on preset features and thresholds.<br>
+Load the corresponding tree model, and then update the model with the data of the new object.<br>
+Save the updated model.<br><br>
+4 Real-time recognition:<br>
+In real-time recognition mode, the program will first select the corresponding tree.<br>
+Load the corresponding tree model.<br>
+Utilize loaded models for real-time object recognition.<br>
+a. Data reading: Read data from Arduino.<br>
+b. Data processing<br>
+c. Feature extraction<br>
+d. Model prediction:<br>
+· Load the corresponding model.<br>
+· Make predictions.<br>
+e. Result output: After reading 10 seconds of data, the results are output through a pop-up window, and the program is terminated after closing the pop-up window.<br>
+        </p> 
+        </div>     
+    </div>
+</div>
+
+<hr>
+<div id="main-content">   
+    <!-- 这是一个HTML注释，用于标识硬件 -->
+    <div id="chapter7">
+        <h2 class="sub-title">7 Product design based on prototypes and concepts</h2>
+        <div id="7-1">
+            <h2 class="second-sub-title">7.1 Introduction</h2>
+            <p class="text-content">
+                Prototype-driven: Concept to product → Components and Architecture → Interaction process → User Friendly → Appearance design
+            </p>
+        </div>           
+        <div id="7-2">
+            <h2 class="second-sub-title">7.2 Component list</h2>
+            <p class="text-content">
+                Note: The following product introduction description comes from its official website, advertisement, purchase page or Wiki entry.
+            </p>
+            <table border="1">
+                <!-- Table Header -->
+                <thead>
+                  <tr>
+                    <th>Module</th>
+                    <th>Component</th>
+                    <th>Specifications</th>
+                    <th>Selection</th>
+                  </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                  <!-- Row 1 -->
+                  <tr>
+                    <td>Sensor</td>
+                    <td>Accelerometer</td>
+                    <td>Ultra-compact 3-axis accelerometer designed for low-gravity sensing.</td>
+                    <td>Bosch BMA253 or equivalent, characterized by its diminutive size and three-dimensional, low-g sensing capabilities.</td>
+                  </tr>
+                  <!-- Row 2 -->
+                  <tr>
+                    <td>Connectivity Modules</td>
+                    <td>Bluetooth Module</td>
+                    <td>Low Energy Bluetooth (BLE) designed for energy-efficient wireless communication.</td>
+                    <td>Nordic Semiconductor's nRF52810 or equivalent, optimized for size-constrained applications.</td>
+                  </tr>
+                  <!-- Row 3 -->
+                  <tr>
+                    <td>Power Management</td>
+                    <td>Rechargeable Battery</td>
+                    <td>Ultra-thin Lithium Polymer (LiPo) battery.</td>
+                    <td>Miniature battery units commonly found in Bluetooth earbuds or hearing aids, with a capacity range of 50mAh to 100mAh for short-term usage between charges.</td>
+                  </tr>
+                  <!-- Row 4 -->
+                  <tr>
+                    <td></td>
+                    <td>Wireless Charging Receiver</td>
+                    <td>Ultra-thin coil and associated circuitry.</td>
+                    <td>Miniature wireless charging receiver module compatible with Qi standards.</td>
+                  </tr>
+                  <!-- Row 5 -->
+                  <tr>
+                    <td>Feedback Mechanisms</td>
+                    <td>LED Lights</td>
+                    <td>Ultra-compact LED units.</td>
+                    <td>0201 size SMD LED or smaller.</td>
+                  </tr>
+                  <!-- Row 6 -->
+                  <tr>
+                    <td></td>
+                    <td>Vibration Motor</td>
+                    <td>Micro vibration motor.</td>
+                    <td>Linear Resonant Actuators (LRAs) preferred over conventional coin motors for their reduced thickness and size.</td>
+                  </tr>
+                  <!-- Row 7 -->
+                  <tr>
+                    <td>Control Elements</td>
+                    <td></td>
+                    <td>Capacitive touch sensors for user input, as they can be integrated without significantly increasing dimensions.</td>
+                    <td>Touch sensor ICs like MPR121 or equivalent.</td>
+                  </tr>
+                  <!-- Row 8 -->
+                  <tr>
+                    <td>On-Board Storage</td>
+                    <td></td>
+                    <td>Ultra-compact memory modules.</td>
+                    <td>EEPROM chips in Wafer-Level Chip-Scale Package (WLCSP) due to their minimal footprint.</td>
+                  </tr>
+                  <!-- Row 9 -->
+                  <tr>
+                    <td>Processing Unit</td>
+                    <td></td>
+                    <td>Ultra-compact microcontroller units.</td>
+                    <td>ATtiny series (e.g., ATtiny85) for basic processing or ARM Cortex M0/M4 in WLCSP formats for more advanced functionalities in a compact package.</td>
+                  </tr>
+                </tbody>
+            </table>       
+        </div>
+        <div id="7-3">
+            <h2 class="second-sub-title">7.3 Sketch🎨</h2>
+            <div class="responsive-image-container">
+                <img src="pic/sketch1.jpg" alt="Description of image" class="responsive-image">
+            </div>
+            <div class="responsive-image-container">
+                <img src="pic/sketch2.jpg" alt="Description of image" class="responsive-image">
+            </div>
+            <p class="text-content">                
+                *Note: This is not a pre-drawn sketch. The sketching and modeling are done at the same time, sketching → modeling → sketching → modeling... In this way, each other is constantly modified, and finally completed. After all, this is my unique way of thinking
+            </p>     
+        </div>        
+        <div id="7-4">
+            <h2 class="second-sub-title">7.4 Product model and usage</h2>
+            <p class="text-content">                
+                7.4.1 Product model display
+            </p>
+            <div class="gif-container">
+                <div class="gif-item">
+                  <img src="pic/gif/1.1.gif" alt="First GIF">
+                </div>
+                <div class="gif-item">
+                  <img src="pic/gif/1.2.gif" alt="Second GIF">
+                </div>
+                <div class="gif-item">
+                  <img src="pic/gif/1.3.gif" alt="Third GIF">
+                </div>
+            </div>          
+            <p class="text-content">                
+                7.4.2 Product six views
+            </p>            
+            <div class="responsive-image-container">
+                <img src="pic/Product six views.png" alt="Description of image" class="responsive-image">
+            </div>
+            <p class="text-content">                
+                7.4.3 Wear and use display
+            </p>
+            <p class="text-content">                
+                Worn on the pad of the finger.🔽
+                (The hand model was bought from a model material website and rendered by myself.)
+            </p>   
+            <div class="gif-container">
+                <div class="gif-item">
+                  <img src="pic/gif/2.1.gif" alt="First GIF">
+                </div>
+                <div class="gif-item">
+                  <img src="pic/gif/2.2.gif" alt="Second GIF">
+                </div>
+                <div class="gif-item">
+                  <img src="pic/gif/2.3.gif" alt="Third GIF">
+                </div>
+            </div>
+            <p class="text-content">                
+                Touch objects to interact.🔽
+            </p>
+            <div class="gif-container">
+                <div class="gif-item">
+                  <img src="pic/gif/3.1.gif" alt="First GIF">
+                </div>
+                <div class="gif-item">
+                  <img src="pic/gif/3.2.gif" alt="Second GIF">
+                </div>
+                <div class="gif-item">
+                  <img src="pic/gif/3.3.gif" alt="Third GIF">
+                </div>
+            </div>
+            <p class="text-content">                
+                7.4.4 Gesture & Control🔽<br><br>
+                Long press - Activate/Sleep<br>
+                Double tap - Mode switch (Data Entry Mode/Object Recognition Mode)<br>
+                Single tap - Confirm/Cancel<br>
+            </p> 
+            <div class="gif-container">
+                <div class="gif-item">
+                  <img src="pic/gif/4.3.gif" alt="First GIF">
+                </div>
+                <div class="gif-item">
+                  <img src="pic/gif/4.2.gif" alt="Second GIF">
+                </div>
+                <div class="gif-item">
+                  <img src="pic/gif/4.1.gif" alt="Third GIF">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div id="main-content">   
+    <div id="chapter8">
+        <h2 class="sub-title">8 Use Case Storyboard</h2>
+        <p class="text-content">                
+            Scenario ideas🔽
+        </p>        
+        <div class="responsive-image-container">
+            <img src="pic/app1.png" alt="Description of image" class="responsive-image">
+        </div>    
+        <div class="responsive-image-container">
+            <img src="pic/app2.png" alt="Description of image" class="responsive-image">
+        </div>    
+        <div class="responsive-image-container">
+            <img src="pic/app3.png" alt="Description of image" class="responsive-image">
+        </div>
+        <div class="yellow-box">
+        <p class="text-content">                
+            Other additions:<br><br> 
+Safety - <br> Send out SOS signals without attracting attention.<br><br> 
+Aided design -<br>
+Tools for the visually impaired - Visually impaired people touch objects through the ring and receive auditory and vibration feedback.
+        </p>
+        </div>     
+    </div>
+</div>
+<hr>
+<div id="main-content">   
+    <div id="chapter9">
+        <h2 class="sub-title">9 Thank you for viewing!💐</h2>
+        <p class="text-content">                 
+Thank you for viewing such a long web page! 🙏<br><br>
+Finally, I accomplished this project after going through a lot of hard work. This web page is a complete record of the struggle process of my self-study, that I really learned a lot. 💪<br><br>
+I searched a lot of Wikipedia articles and English dictionaries every day to learn how to write and use some proper nouns. 🔍<br><br>
+I conducted wild experiments during the prototype development part, and I broke  an accelerometers and three microphone modules. 😎<br><br>
+It's such a rewarding learning journey, isn't it! 🌸
+        </p>
+        <h2 class="sub-title">
+I'm very glad if you want to communicate with me! 👉
+<a href="mailto:oxsheron@gmail.com">oxsheron@gmail.com</a> <br><br>
+That's all, thank you! Wish you have a nice day!🌞<br><br>
+        </h2>
+
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
