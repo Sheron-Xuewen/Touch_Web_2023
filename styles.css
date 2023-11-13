@@ -357,3 +357,26 @@ table {
         width: 80%; /* 在较大屏幕上，图片占据70%宽度 */
     }
 }
+
+.dual-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* 在图片之间保持间隔 */
+    gap: 10px; /* 在图片之间添加空隙 */
+}
+
+.image-wrapper {
+    flex: 1 1 48%; /* 默认情况下每个包装器占一行的一半 */
+    box-sizing: border-box; /* 确保边框和内边距不影响总宽度 */
+}
+
+.image-wrapper img {
+    width: 100%; /* 让图片填充其包装器 */
+    height: auto; /* 保持图片的原始纵横比 */
+}
+
+@media screen and (max-width: 768px) {
+    .image-wrapper {
+        flex-basis: 100%; /* 在较小屏幕上，每个包装器占一整行 */
+    }
+}
