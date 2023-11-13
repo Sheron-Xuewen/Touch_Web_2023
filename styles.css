@@ -380,3 +380,12 @@ table {
         flex-basis: 100%; /* 在较小屏幕上，每个包装器占一整行 */
     }
 }
+
+.box01 {
+    background-color: #c7e2ed;  
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;  /* 设置内边距为10px */
+    margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
+    border-radius: 10px;         /* 圆角 */
+    color: rgb(255, 255, 255); /* 文本颜色 */
+}
