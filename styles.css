@@ -219,7 +219,7 @@ body, html {
 }
 
 .yellow-box {
-    background-color: rgb(255, 238, 129);  /* 设置背景色为黄色 */ 
+    background-color: rgb(255, 226, 129);  /* 设置背景色为黄色 */ 
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 0;  /* 设置外边距为上下10px，左右0 */
     border-radius: 8px;
