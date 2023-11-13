@@ -31,7 +31,7 @@ body, html {
     padding-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 #left-sidebar p,
@@ -219,15 +219,17 @@ body, html {
 }
 
 .yellow-box {
-    background-color: rgb(255, 244, 176);  /* 设置背景色为黄色 */ 
+    background-color: rgb(255, 241, 150);  /* 设置背景色为黄色 */ 
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 0;  /* 设置外边距为上下10px，左右0 */
+    border-radius: 5px;
 }
 
 .gray-box {
-    background-color: rgb(219, 219, 219);  /* 设置背景色为黄色 */
+    background-color: rgb(176, 191, 206);  /* 设置背景色为黄色 */
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 0;  /* 设置外边距为上下10px，左右0 */
+    border-radius: 5px;
 }
 
 .image-container {
@@ -333,4 +335,10 @@ table {
       align-items: center;
     }
   }
-  
+  .half-width {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
