@@ -387,5 +387,5 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0); /* 文本颜色 */
 }
