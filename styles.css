@@ -450,7 +450,7 @@ table {
 }
 
 .box09 {
-    background-color: RGBRGB(255, 246, 149) ;  
+    background-color: RGB(255, 246, 149) ;  
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
