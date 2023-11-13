@@ -396,7 +396,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
 .box03 {
     background-color: RGB(186, 211, 235);  
@@ -404,7 +404,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
 .box04 {
     background-color: RGB(196, 221, 245);  
@@ -412,7 +412,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
 .box05 {
     background-color: RGB(206, 231, 255);  
@@ -420,7 +420,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
 .box06 {
     background-color: RGB(216, 241, 255);  
@@ -428,7 +428,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
 
 .box07 {
@@ -437,7 +437,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
 
 .box08 {
@@ -446,7 +446,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
 
 .box09 {
@@ -455,7 +455,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
 
 .box010 {
@@ -464,7 +464,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
 
 .box011 {
@@ -473,5 +473,5 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
+    color: rgb(0, 0, 0)
 }
