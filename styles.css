@@ -328,16 +328,3 @@ table {
     height: auto;
   }
   
-.responsive-image1 {
-    width: 100%; /* 默认情况下，图片占据100%宽度 */
-    display: block; /* 使图片独占一行 */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 768px) { /* 在屏幕宽度大于或等于768px时应用 */
-    .responsive-image1 {
-        width: 70%; /* 在较大屏幕上，图片占据70%宽度 */
-    }
-}
-
