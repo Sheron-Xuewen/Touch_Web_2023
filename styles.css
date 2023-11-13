@@ -475,3 +475,52 @@ table {
     border-radius: 10px;         /* 圆角 */
     color: rgb(0, 0, 0)
 }
+
+.box012 {
+    background-color: RGB(236, 255, 255);  
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;  /* 设置内边距为10px */
+    margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
+    border-radius: 10px;         /* 圆角 */
+    color: rgb(0, 0, 0)
+}
+.box013 {
+    background-color: RGB(63, 97, 191);  
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;  /* 设置内边距为10px */
+    margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
+    border-radius: 10px;         /* 圆角 */
+    color: rgb(0, 0, 0)
+}
+.box014 {
+    background-color: RGB(83, 117, 211);  
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;  /* 设置内边距为10px */
+    margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
+    border-radius: 10px;         /* 圆角 */
+    color: rgb(0, 0, 0)
+}
+.box015 {
+    background-color: RGB(103, 137, 231);  
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;  /* 设置内边距为10px */
+    margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
+    border-radius: 10px;         /* 圆角 */
+    color: rgb(0, 0, 0)
+}
+.box016 {
+    background-color: RGB(123, 157, 251);  
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;  /* 设置内边距为10px */
+    margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
+    border-radius: 10px;         /* 圆角 */
+    color: rgb(0, 0, 0)
+}
+.box017 {
+    background-color: RGB(143, 177, 255);  
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;  /* 设置内边距为10px */
+    margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
+    border-radius: 10px;         /* 圆角 */
+    color: rgb(0, 0, 0)
+}
