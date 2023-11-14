@@ -554,7 +554,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255)
+    color: rgb(0, 0, 0)
 }
 .box020 {
     background-color: #D4EDDA;  
@@ -562,7 +562,7 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255)
+    color: rgb(0, 0, 0)
 }
 .box021 {
     background-color: #E5D7F6;  
@@ -570,5 +570,5 @@ table {
     padding: 10px;  /* 设置内边距为10px */
     margin: 10px 10px;  /* 设置外边距为上下10px，左右0 */
     border-radius: 10px;         /* 圆角 */
-    color: rgb(255, 255, 255)
+    color: rgb(0, 0, 0)
 }
