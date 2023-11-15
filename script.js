@@ -58,9 +58,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Call the function initially to set the correct state
     handleResponsiveness();
+    document.addEventListener('click', function(event) {
+        const screenWidth = window.innerWidth;
+        if (screenWidth <= 768 && leftSidebar.style.display === 'block' && !leftSidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+            leftSidebar.style.display = 'none';
+            backgroundLayer.style.display = 'none';
+        }
+    });
 
-/* 这是一个JavaScript注释，用于标识右边的主体部分的脚本开始 */
-
-
-
+    
 });
